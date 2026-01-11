@@ -1,0 +1,36 @@
+Personal License for Daily-DSA
+
+Copyright (c) 2026 Priyam Kapadiya
+
+Permission
+----------
+The copyright owner grants to any person obtaining a copy of this software
+and associated documentation files (the "Software") a worldwide, royalty-free,
+non-exclusive, perpetual license to use, reproduce, modify, prepare derivative
+works of, publicly display, distribute, and sublicense the Software, subject
+to the conditions below.
+
+Conditions
+----------
+- Attribution: Redistributions of the source code or substantial portions of
+  the Software must retain this license notice and the above copyright
+  statement.
+- No endorsement: The names "Priyam Kapadiya" and "Daily-DSA" may not be used
+  to endorse or promote products derived from the Software without prior
+  written permission.
+
+Disclaimer
+----------
+The Software is provided "AS IS", without warranty of any kind, express or
+implied, including but not limited to warranties of merchantability, fitness
+for a particular purpose, or non-infringement. In no event shall the
+copyright holder be liable for any claim, damages, or other liability, whether
+in an action of contract, tort or otherwise, arising from, out of, or in
+connection with the Software or the use or other dealings in the Software.
+
+Notes
+-----
+This is a custom personal license created by the repository owner for the
+project "Daily-DSA". For stronger legal guarantees or compatibility with
+certain ecosystems, consider using a well-known OSI-approved license or seek
+legal advice.
