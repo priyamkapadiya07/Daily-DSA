@@ -86,14 +86,20 @@ Each solution follows a simple format:
 
 ---
 
-## 🤝 Contributions
-
-This is a personal learning repository.  
-Suggestions and improvements are always welcome.
-
----
-
 ## ⭐ Motivation
 
 Consistency beats intensity.  
 Small progress every day leads to big results.
+
+## Contributions and Community
+
+There are many ways you can contribute, even if you don't code:
+
+1. You can start by giving a star to this repository!
+1. If you find any issues, even if it is a typo, you can [raise an issue](https://github.com/priyamkapadiya07/Daily-DSA/issues/new) to inform us.
+
+
+## License
+
+Warehouse Popup is released under the [MIT License](https://github.com/priyamkapadiya07/Daily-DSA/blob/main/license.txt)
+---
