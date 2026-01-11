@@ -1,6 +1,6 @@
 Personal License for Daily-DSA
 
-Copyright (c) 2026 Priyam Kapadiya
+Copyright (c) 2026 Priyam Kapadiya 
 
 Permission
 ----------
