@@ -1,3 +1,5 @@
+# Program to find minimum and maximum elements in an array
+
 arr=input("Enter elements of array separated by space: ").split()
 min=arr[0]
 max=arr[0]
