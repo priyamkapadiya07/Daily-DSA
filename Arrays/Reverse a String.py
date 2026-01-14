@@ -1,3 +1,5 @@
+# Program to reverse a string or an array based on user choice
+
 ch=int(input("Enter (1 for string and 2 for array) reverse: "))
 
 if ch==1:
