@@ -1,6 +1,6 @@
 # Program to move all negative elements to the end of the array
 
-arr = [1, -1, 3, 2, -7, -5, 11, 6 ]
+arr = list(map(int, input("Enter elements of array separated by space: ").split()))
 p=[]
 n=[]
 for i in arr:
