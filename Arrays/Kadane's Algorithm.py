@@ -1,6 +1,6 @@
 # Find Largest sum contiguous Subarray [V. IMP]
 
-arr = [2, 3, -8, 7, -1, 2, 3]
+arr = list(map(int, input("Enter elements of array separated by space: ").split()))
 d={}
 
 for i in range(len(arr)-1):
@@ -10,6 +10,4 @@ for i in range(len(arr)-1):
         d[sum(subarr)]=subarr
         n+=1
 
-for k,v in d.items():
-    if k==max(d.keys()):
-        print("Largest sum contiguous Subarray is:",v,"with sum =",k)
+print("Largest sum contiguous Subarray is:",d[max(d.keys())],"with sum =",max(d.keys()))
