@@ -6,4 +6,4 @@ no=n
 while n>0:
     arr.insert(0,arr.pop())
     n-=1
-print(f"After rotating array {no} times:",arr)
+print(f"After rotating array {no} times in clock-wise:",arr)
