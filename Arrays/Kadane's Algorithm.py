@@ -13,7 +13,7 @@ arr = list(map(int, input("Enter elements of array separated by space: ").split(
 # print(d)
 # print("\nLargest sum contiguous Subarray is:",d[max(d.keys())],"with sum =",max(d.keys()),"\n")
 
-print("----- Optimal Approach (Kadane's Algorithm) -----\n")
+print("\n----- Optimal Approach (Kadane's Algorithm) -----\n")
 
 max_sum = curr_sum = arr[0]
 start = end = temp_start = 0
