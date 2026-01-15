@@ -2,7 +2,8 @@
 
 arr = list(map(int, input("Enter elements of array separated by space: ").split()))
 n=int(input("Enter no. of rotation you want: "))
+no=n
 while n>0:
     arr.insert(0,arr.pop())
     n-=1
-print(arr)
+print(f"After rotating array {no} times:",arr)
