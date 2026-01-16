@@ -1,0 +1,1 @@
+# Minimize the maximum difference between heights
