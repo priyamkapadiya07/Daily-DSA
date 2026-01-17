@@ -1,0 +1,27 @@
+[MASTER]
+disable=
+    missing-module-docstring,
+    missing-class-docstring,
+    missing-function-docstring,
+    C0111,
+    R0913,
+    R0914
+max-line-length=100
+ignore-imports=yes
+
+[BASIC]
+good-names=i,j,k,ex,Run,_,x,y,z,n,m,s,t,arr,d
+
+[MESSAGES CONTROL]
+disable=
+    raw-checker-failed,
+    bad-inline-option-value,
+    locally-disabled,
+    file-ignored,
+    suppressed-message,
+    useless-suppression,
+    deprecated-pragma,
+    use-symbolic-message
+
+[FORMAT]
+max-line-length=100

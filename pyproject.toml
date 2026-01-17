@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=40.8.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Daily-DSA"
+version = "1.0.0"
+description = "Daily Data Structures and Algorithms practice"
+authors = [
+    {name = "Developer"}
+]
+readme = "README.md"
+license = {text = "MIT"}
+
+[tool.black]
+line-length = 100
+target-version = ['py38', 'py39', 'py310']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | venv
+  | \.egg-info
+  | build
+  | dist
+)/
+'''
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+
+[tool.isort]
+profile = "black"
+line_length = 100
+skip_glob = [".venv", "venv"]
