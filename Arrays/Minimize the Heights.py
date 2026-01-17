@@ -1,5 +1,7 @@
 # Minimize the maximum difference between heights
 
+# Time Complexity: O(n log n) | Space Complexity: O(1)
+# Reason: Sorting takes O(n log n). Traversal is O(n) with constant space variables.
 def get_min_diff(arr, k):
     n = len(arr)
     if n == 1:

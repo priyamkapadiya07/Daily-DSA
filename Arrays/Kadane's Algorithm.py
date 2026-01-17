@@ -1,6 +1,9 @@
 # Find Largest sum contiguous Subarray
 # This problem also known as Kadane's Algorithm
 
+# Time Complexity: O(n) | Space Complexity: O(1)
+# Reason: Single pass through array with constant space for variables.
+
 arr = list(map(int, input("Enter elements of array separated by space: ").split()))
 # d={}
 

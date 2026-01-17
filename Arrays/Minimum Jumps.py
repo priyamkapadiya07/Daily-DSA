@@ -1,5 +1,7 @@
 # Minimum no. of Jumps to reach end of an array
 
+# Time Complexity: O(n) | Space Complexity: O(1)
+# Reason: Single pass through array with constant time operations. Only constant space variables used.
 def min_jumps(arr):
     n = len(arr)
 

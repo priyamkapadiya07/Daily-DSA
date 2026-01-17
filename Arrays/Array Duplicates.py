@@ -1,6 +1,11 @@
 # Find duplicate in an array of N+1 Integers
 
+# Time Complexity: O(n log n) to O(n) | Space Complexity: O(n)
+# Reason: Depends on the method used
+
 # Method - 1 (Using Dictionary)
+# Time Complexity: O(n) | Space Complexity: O(n)
+# Reason: Single pass through array and dictionary lookup is O(1). Dictionary stores all unique elements.
 arr = list(map(int, input("Enter elements of array separated by space: ").split()))
 d={}
 for i in arr:
@@ -10,6 +15,8 @@ print(duplicate)
 
 
 # Method - 2 (Using Set)
+# Time Complexity: O(n) | Space Complexity: O(n)
+# Reason: Single pass through array and set lookup/insertion is O(1). Set stores unique elements.
 arr = list(map(int, input("Enter elements of array separated by space: ").split()))
 s=set()
 duplicate=[]
@@ -22,6 +29,8 @@ print(duplicate)
 
 
 # Method - 3 (Using Negation Technique)
+# Time Complexity: O(n) | Space Complexity: O(k) where k is number of duplicates
+# Reason: Single pass through array with constant time operations. Space only for duplicates list.
 arr = list(map(int, input("Enter elements: ").split()))
 duplicates = []
 

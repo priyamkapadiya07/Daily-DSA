@@ -1,5 +1,8 @@
 # Find the Union and Intersection of the two sorted arrays.
 
+# Time Complexity: O(n + m) for set operations, O(n*m) for alternative approach | Space Complexity: O(n + m)
+# Reason: Set union/intersection is O(n + m). Alternative approach has nested loop O(n*m). Both approaches store union/intersection elements.
+
 n= int(input("Enter 1 for Union and 2 for Intersection of two arrays: "))
 
 a = list(map(int, input("Enter elements of first array separated by space: ").split()))
