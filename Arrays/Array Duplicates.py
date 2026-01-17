@@ -1,4 +1,4 @@
-# Find duplicate in an array of N+1 Integers
+# Find duplicate in an array
 
 # Time Complexity: O(n log n) to O(n) | Space Complexity: O(n)
 # Reason: Depends on the method used
