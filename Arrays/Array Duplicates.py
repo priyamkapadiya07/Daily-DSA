@@ -21,3 +21,16 @@ for i in arr:
 print(duplicate)
 
 
+# Method - 3 (Using Negation Technique)
+arr = list(map(int, input("Enter elements: ").split()))
+duplicates = []
+
+for i in range(len(arr)):
+    index = abs(arr[i]) - 1
+    
+    if arr[index] < 0:
+        duplicates.append(abs(arr[i]))
+    else:
+        arr[index] = -arr[index]
+
+print("Duplicates:", list(set(duplicates)))
