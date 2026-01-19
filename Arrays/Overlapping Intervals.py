@@ -28,6 +28,5 @@ def merge_intervals(arr):
             
     return merged
 
-# Example Usage:
 print(merge_intervals([[1, 3], [2, 4], [6, 8], [9, 10]])) # Output: [[1, 4], [6, 8], [9, 10]]
 print(merge_intervals([[6, 8], [1, 9], [2, 4], [4, 7]])) # Output: [[1, 9]]
