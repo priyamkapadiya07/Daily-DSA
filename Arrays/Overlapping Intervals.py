@@ -10,13 +10,9 @@ def merge_intervals(arr):
     merged = []
     
     for interval in arr:
-        # 2. If the list of merged intervals is empty or if the current 
-        # interval does not overlap with the last merged one, add it.
         if not merged or merged[-1][1] < interval[0]:
             merged.append(interval)
         else:
-            # 3. Otherwise, there is an overlap, so we merge the current 
-            # interval with the last merged one by updating its end time.
             merged[-1][1] = max(merged[-1][1], interval[1])
             
     return merged
