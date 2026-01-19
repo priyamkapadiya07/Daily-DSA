@@ -1,5 +1,16 @@
 # Merge Intervals
 
+# Time Complexity: O(n log n)
+#   - Sorting the intervals takes O(n log n) where n is the number of intervals
+#   - The single pass through sorted intervals takes O(n)
+#   - Overall: O(n log n) due to sorting being the dominant operation
+#
+# Space Complexity: O(n) or O(1)
+#   - O(n) if we count the output merged array (in worst case, no overlaps)
+#   - O(1) if we only count auxiliary space (not counting the result)
+#   - Sorting in-place may use O(log n) for recursion stack (depending on Python's sort implementation)
+
+
 def merge_intervals(arr):
     if not arr:
         return []
