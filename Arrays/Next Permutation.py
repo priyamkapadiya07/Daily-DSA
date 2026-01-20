@@ -1,7 +1,5 @@
 # Next Permutation
 
-arr = [2, 4, 1, 7, 5, 0]
-
 def next_permutation(arr):
     n = len(arr)
     i = n - 2
@@ -26,5 +24,6 @@ def next_permutation(arr):
 
     return arr
 
+arr = [2, 4, 1, 7, 5, 0]
 print(next_permutation(arr))  # Output: [2, 4, 5, 0, 1, 7]
 
