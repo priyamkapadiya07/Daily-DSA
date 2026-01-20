@@ -1,6 +1,16 @@
 # Next Permutation
 
 def next_permutation(arr):
+    """
+    Time Complexity: O(n)
+    Reason: We traverse the array from right to left (worst case n iterations),
+    swap one element (O(1)), and reverse a portion of the array (at most n/2 iterations).
+    All operations combined are O(n).
+    
+    Space Complexity: O(1)
+    Reason: We only use constant extra space for variables (n, i, j, left, right).
+    The algorithm modifies the input array in-place without using any additional data structures.
+    """
     n = len(arr)
     i = n - 2
 
