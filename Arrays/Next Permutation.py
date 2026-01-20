@@ -36,4 +36,3 @@ def next_permutation(arr):
 
 arr = [2, 4, 1, 7, 5, 0]
 print(next_permutation(arr))  # Output: [2, 4, 5, 0, 1, 7]
-
