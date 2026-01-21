@@ -20,4 +20,4 @@ def count_inversions(arr):
     return c
 
 arr = list(map(int, input("Enter elements of array separated by space: ").split()))
-print(count_inversions(arr))
+print(count_inversions(arr)) 
