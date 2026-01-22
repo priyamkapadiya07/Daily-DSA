@@ -9,7 +9,6 @@ Reason: We only use constant extra space for the ans variable,
         regardless of input size
 """
 
-
 def stockBuySell(arr):
     ans = 0
     
