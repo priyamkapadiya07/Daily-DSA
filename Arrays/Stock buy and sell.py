@@ -9,5 +9,5 @@ def stockBuySell(arr):
             ans+=arr[i]-arr[i-1]
     return ans
 
-arr =  [4, 2]
+arr = list(map(int, input("Enter stock prices separated by space: ").split()))
 print(stockBuySell(arr))
