@@ -1,6 +1,5 @@
 # Best time to buy and Sell stock
 
-arr =  [4, 2]
 
 
 def stockBuySell(arr):
@@ -9,4 +8,6 @@ def stockBuySell(arr):
         if arr[i]>arr[i-1]:
             ans+=arr[i]-arr[i-1]
     return ans
+
+arr =  [4, 2]
 print(stockBuySell(arr))
