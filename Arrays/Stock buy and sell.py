@@ -1,7 +1,5 @@
 # Best time to buy and Sell stock
 
-
-
 def stockBuySell(arr):
     ans=0
     for i in range(1,len(arr)):
