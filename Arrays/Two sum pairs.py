@@ -1,5 +1,5 @@
 # Find all pairs on integer array whose sum is equal to given number
-
+ 
 arr=list(map(int, input("Enter array elements separated by space: ").split()))
 target_sum=int(input("Enter the target sum: "))
 
