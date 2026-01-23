@@ -1,5 +1,5 @@
 # Find all pairs on integer array whose sum is equal to given number
-#
+
 # Time Complexity: O(n²)
 # Reason: Nested loops iterate through all pairs of elements in the array.
 # For each element at index i, we check all elements from i+1 to n-1.
@@ -18,8 +18,6 @@ def find_pairs_with_sum(arr, target_sum):
             if arr[i] + arr[j] == target_sum:
                 pairs.append((arr[i], arr[j]))
     return pairs
-
-
 
 result = find_pairs_with_sum(arr, target_sum)
 
