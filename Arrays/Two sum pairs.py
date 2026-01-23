@@ -12,6 +12,7 @@ def find_pairs_with_sum(arr, target_sum):
     return pairs
 
 result = find_pairs_with_sum(arr, target_sum)
+
 if result:
     print("Pairs with sum", target_sum, "are:", result)
 else:
