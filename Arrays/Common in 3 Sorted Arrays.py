@@ -1,4 +1,14 @@
 # Find common elements In 3 sorted arrays
+# 
+# Time Complexity: O(n + m + p)
+# Reason: We traverse each array only once using three pointers (i, j, k).
+#         Each pointer moves forward until the end of its respective array.
+#         Total operations = n + m + p where n, m, p are lengths of arr1, arr2, arr3.
+#
+# Space Complexity: O(k)
+# Reason: The only extra space used is the 'common_elements' list which stores
+#         the common elements found. In the worst case, all elements could be
+#         common (k = min(n, m, p)), but typically k is much smaller.
 
 
 def find_common_elements(arr1, arr2, arr3):
