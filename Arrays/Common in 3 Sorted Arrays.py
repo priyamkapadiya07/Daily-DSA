@@ -1,8 +1,5 @@
 # Find common elements In 3 sorted arrays
 
-arr1 = [1, 5, 10, 20, 40, 80]
-arr2 = [6, 7, 20, 80, 100]
-arr3 = [3, 4, 15, 20, 30, 70, 80, 120]
 
 def find_common_elements(arr1, arr2, arr3):
     i, j, k = 0, 0, 0
@@ -23,4 +20,7 @@ def find_common_elements(arr1, arr2, arr3):
 
     return common_elements
 
+arr1 = [1, 5, 10, 20, 40, 80]
+arr2 = [6, 7, 20, 80, 100]
+arr3 = [3, 4, 15, 20, 30, 70, 80, 120]
 print("Common elements in the three sorted arrays are:", find_common_elements(arr1, arr2, arr3))
