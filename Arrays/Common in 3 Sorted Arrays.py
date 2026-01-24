@@ -10,7 +10,6 @@
 #         the common elements found. In the worst case, all elements could be
 #         common (k = min(n, m, p)), but typically k is much smaller.
 
-
 def find_common_elements(arr1, arr2, arr3):
     i, j, k = 0, 0, 0
     common_elements = []
