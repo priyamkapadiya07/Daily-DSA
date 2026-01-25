@@ -7,5 +7,5 @@ def rearrange_alternately(arr):
         i+=2
     return arr
 
-arr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110]
+arr = list(map(int, input("Enter the elements of the array separated by spaces: ").split()))
 print(rearrange_alternately(sorted(arr)))
