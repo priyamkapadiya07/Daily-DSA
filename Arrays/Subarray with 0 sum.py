@@ -1,5 +1,6 @@
 # Find if there is any subarray with sum equal to 0
 
+# Method-1: Brute Force Approach
 def has_zero_sum_subarray(arr):
     for i in range(len(arr)):
         curr_sum = 0
