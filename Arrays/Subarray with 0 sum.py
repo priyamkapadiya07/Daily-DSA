@@ -1,6 +1,10 @@
 # Find if there is any subarray with sum equal to 0
 
 # Method-1: Brute Force Approach
+# Time Complexity: O(n²) - Two nested loops iterate through all subarrays
+# Space Complexity: O(n) - Space required to store the returned subarray
+# Reason: We check every possible subarray by maintaining a running sum for each starting position
+
 def has_zero_sum_subarray(arr):
     for i in range(len(arr)):
         curr_sum = 0
