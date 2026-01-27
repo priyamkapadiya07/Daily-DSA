@@ -1,13 +1,15 @@
 # Find factorial of a large number
-#
-# Time Complexity: O(n)
-# Reason: The loop iterates from 1 to n, performing one multiplication operation 
-#         in each iteration. Hence, total operations = n.
-#
-# Space Complexity: O(n) 
-# Reason: The result grows exponentially with n. A factorial of n has approximately
-#         n*log10(n) digits, requiring O(n) space to store the large number as a string.
-#         Python handles this natively with arbitrary precision integers.
+
+'''
+Time Complexity: O(n)
+Reason: The loop iterates from 1 to n, performing one multiplication operation 
+        in each iteration. Hence, total operations = n.
+
+Space Complexity: O(n) 
+Reason: The result grows exponentially with n. A factorial of n has approximately
+        n*log10(n) digits, requiring O(n) space to store the large number as a string.
+        Python handles this natively with arbitrary precision integers.
+'''
 
 def factorial_large_number(num):
     result=1
