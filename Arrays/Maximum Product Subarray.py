@@ -10,7 +10,6 @@ Reason: Only using a constant amount of extra space (product variable)
 The input array is modified in-place, no additional data structures used
 '''
 
-arr = list(map(int, input("Enter the elements of the array separated by spaces: ").split()))
 
 def max_product_subarray(arr):
     for i in range(len(arr)):
@@ -20,4 +19,5 @@ def max_product_subarray(arr):
             arr[i]=max(arr[i], product)
     return arr
 
+arr = list(map(int, input("Enter the elements of the array separated by spaces: ").split()))
 print("The maximum product subarray is:", max(max_product_subarray(arr)))
