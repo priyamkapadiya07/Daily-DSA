@@ -1,6 +1,6 @@
 # Find maximum product subarray
 
-arr = [-2, 6, -3, -10, 0, 2]
+arr = list(map(int, input("Enter the elements of the array separated by spaces: ").split()))
 
 for i in range(len(arr)):
     pro=1
