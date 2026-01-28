@@ -10,9 +10,12 @@
 
 arr = list(map(int, input("Enter the elements of the array separated by spaces: ").split()))
 
-for i in range(len(arr)):
-    product=1
-    for j in range(i, len(arr)):
-        product *= arr[j]
-        arr[i]=max(arr[i], product)
-print("The maximum product subarray is:", max(arr))
+def max_product_subarray(arr):
+    for i in range(len(arr)):
+        product=1
+        for j in range(i, len(arr)):
+            product *= arr[j]
+            arr[i]=max(arr[i], product)
+    return arr
+
+print("The maximum product subarray is:", max(max_product_subarray(arr)))
