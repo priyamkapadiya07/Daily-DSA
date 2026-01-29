@@ -14,7 +14,7 @@ SPACE COMPLEXITY: O(n)
     - Overall space used is O(n)
 """
 
-arr = [2, 6, 1, 9, 4, 5, 3]
+arr = list(map(int, input("Enter the elements of the array separated by spaces: ").split()))
 arr = list(set(sorted(arr)))
 
 d = {}
