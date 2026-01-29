@@ -1,5 +1,19 @@
 # Find longest consecutive subsequence
 
+"""
+TIME COMPLEXITY: O(n²)
+    - Converting to set and sorting: O(n log n)
+    - Nested loops: O(n²) in worst case (outer loop runs n times,
+      inner loop can run up to n times for each iteration)
+    - Overall dominated by nested loops
+    
+SPACE COMPLEXITY: O(n)
+    - Dictionary 'd' stores at most n elements: O(n)
+    - Temporary array 'a1' can store up to n elements: O(n)
+    - Set conversion also uses O(n) space
+    - Overall space used is O(n)
+"""
+
 arr = [2, 6, 1, 9, 4, 5, 3]
 arr = list(set(sorted(arr)))
 
