@@ -1,7 +1,7 @@
 # Given an array of size n and a number k, fin all elements that appear more than " n/k " times.
 
-arr = [3, 1, 2, 2, 1, 2, 3, 3]
-k = 4
+arr = list(map(int, input("Enter the elements of the array separated by spaces: ").split()))
+k = int(input("Enter the value of k: "))
 
 d={}
 for i in arr:
