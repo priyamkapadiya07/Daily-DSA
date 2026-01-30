@@ -14,12 +14,10 @@ Space Complexity: O(n)
 arr = list(map(int, input("Enter the elements of the array separated by spaces: ").split()))
 k = int(input("Enter the value of k: "))
 
-# Count occurrences of each element
 d = {}
 for i in arr:
     d[i] = d.get(i, 0) + 1
 
-# Count elements that appear more than n/k times
 res = 0
 for key in d:
     if d[key] > len(arr) // k:
