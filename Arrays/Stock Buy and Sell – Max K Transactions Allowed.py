@@ -18,6 +18,6 @@ def maxProfit(prices, k):
     return dp[n - 1][k]
 
 prices = list(map(int, input("Enter the stock prices separated by spaces: ").split()))
-k = 2  # Maximum of two transactions allowed
+k = int(input("Enter the maximum number of transactions allowed (k): "))
 result = maxProfit(prices, k)
 print("Maximum profit with at most two transactions:", result)
