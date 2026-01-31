@@ -21,3 +21,17 @@ prices = list(map(int, input("Enter the stock prices separated by spaces: ").spl
 k = int(input("Enter the maximum number of transactions allowed (k): "))
 result = maxProfit(prices, k)
 print("Maximum profit with at most two transactions:", result)
+
+# Time Complexity: O(n * k)
+# Reason: The algorithm uses two nested loops: the outer loop iterates
+# over transactions `t` from 1..k and the inner loop iterates over days `d`
+# from 1..n. Each inner iteration performs O(1) work (a couple of assignments
+# and max comparisons), so the total work is proportional to n * k.
+#
+# Space Complexity: O(n * (k + 1))
+# Reason: The DP table `dp` has dimensions n x (k+1), so it requires
+# O(n*(k+1)) space. Other variables use O(1) additional space.
+#
+# Note: The space can be optimized to O(n) or O(k) using rolling arrays or
+# other techniques; also when k >= n/2 the problem reduces to unlimited
+# transactions and can be solved in O(n) time.
