@@ -2,7 +2,6 @@
 Find whether an array is a subset of another array
 '''
 
-
 def isSubset(arr1, arr2):
     set_a = set(arr1)
     for i in arr2:
