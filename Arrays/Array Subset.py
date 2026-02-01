@@ -1,5 +1,15 @@
 '''
 Find whether an array is a subset of another array
+
+Time Complexity: O(n + m)
+    - Creating set from arr1: O(n) where n is length of arr1
+    - Iterating through arr2 and checking membership: O(m) where m is length of arr2
+    - Each set lookup is O(1) on average
+    - Total: O(n) + O(m) = O(n + m)
+
+Space Complexity: O(n)
+    - We create a set from arr1 which requires O(n) space
+    - No other significant data structures are used
 '''
 
 def isSubset(arr1, arr2):
