@@ -10,6 +10,6 @@ def isSubset(arr1, arr2):
             return False
     return True
 
-a = [11, 7, 1, 13, 21, 3, 7, 3]
-b = [11, 3, 7, 1, 7]
+a = list(map(int, input("Enter elements of first array separated by space: ").split()))
+b = list(map(int, input("Enter elements of second array separated by space: ").split()))
 print(isSubset(a, b))
