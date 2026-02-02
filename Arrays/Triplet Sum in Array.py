@@ -25,4 +25,4 @@ result = findTriplet(arr, target_sum)
 if result:
     print("Triplet found:", result)
 else:
-    print("No triplet found that sums to the target value.")
+    print("No triplet found that sums to the target value.") 
