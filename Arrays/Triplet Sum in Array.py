@@ -1,8 +1,11 @@
 '''
 Find the triplet that sum to a given value
 
-Time Complexity: O(n^2) -- outer loop over `i` and inner loop over `p2` in worst case
-Space Complexity: O(1) -- uses a constant amount of extra space
+Time Complexity: O(n^2)
+Reason: The outer loop fixes index `i` and runs for about `n` iterations. For each `i`, the inner pointer `p2` (with `p1` fixed as `i+1`) may scan the remaining elements; the total number of checks is roughly sum_{i=0..n-1}(n-i) = O(n^2).
+
+Space Complexity: O(1)
+Reason: The algorithm uses a fixed number of extra variables (`i`, `p1`, `p2`, `current_sum`) and no additional data structures proportional to input size.
 '''
 
 def findTriplet(arr, target_sum):
