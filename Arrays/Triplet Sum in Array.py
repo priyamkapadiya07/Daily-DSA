@@ -1,5 +1,8 @@
 '''
 Find the triplet that sum to a given value
+
+Time Complexity: O(n^2) -- outer loop over `i` and inner loop over `p2` in worst case
+Space Complexity: O(1) -- uses a constant amount of extra space
 '''
 
 def findTriplet(arr, target_sum):
