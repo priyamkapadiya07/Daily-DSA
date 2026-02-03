@@ -77,4 +77,4 @@ Space Complexity: O(1)
 
 # arr = [3,0,1,0,4,0,2]
 # result = trap(arr)
-# print("Total trapped rain water:", result)
+# print("Total trapped rain water:", result) 
