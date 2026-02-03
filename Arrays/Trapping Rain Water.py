@@ -1,4 +1,5 @@
 '''Trapping Rain water problem'''
+
 a=[3,0,1,0,4,0,2]
 l=a[:]
 r=a[:]
