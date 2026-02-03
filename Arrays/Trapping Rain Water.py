@@ -1,6 +1,20 @@
-'''Trapping Rain water problem'''
+'''
+Trapping Rain water problem
 
-# Method 1: Using precomputed arrays for left max and right max
+============================================================================
+Method 1: Using precomputed arrays for left max and right max
+============================================================================
+Time Complexity: O(n)
+- Three separate passes through the array: building leftMax O(n), 
+  building rightMax O(n), and calculating water O(n)
+- Total: O(n) + O(n) + O(n) = O(n)
+
+Space Complexity: O(n)
+- Two auxiliary arrays (leftMax and rightMax), each of size n
+- Total space: O(n) + O(n) = O(n)
+============================================================================
+'''
+
 def trap(arr):
     n = len(arr)
     if n == 0:
@@ -26,7 +40,23 @@ arr = list(map(int, input("Enter elevation map elements separated by space: ").s
 result = trap(arr)
 print("Total trapped rain water:", result)
     
-# Method 2: Two-pointer approach (commented out)
+'''
+============================================================================
+Method 2: Two-pointer approach
+============================================================================
+Time Complexity: O(n)
+- Single pass through the array with two pointers moving towards each other
+- Each element is visited at most once
+- Total operations: O(n)
+
+Space Complexity: O(1)
+- Only using constant extra space for variables: left, right, leftMax, 
+  rightMax, and water
+- No auxiliary data structures like arrays
+- Total space: O(1)
+============================================================================
+'''
+
 # def trap(arr):
 #     left = 0
 #     right = len(arr) - 1
