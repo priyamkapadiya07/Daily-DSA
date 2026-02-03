@@ -1,22 +1,29 @@
 '''Trapping Rain water problem'''
 
-a=[3,0,1,0,4,0,2]
-l=a[:]
-r=a[:]
-# left max
-for i in range(len(a)-1):
-    if l[i]>l[i+1]:
-        l[i+1]=l[i]
+def trap(arr):
+    n = len(arr)
+    if n == 0:
+        return 0
 
-# right max
-for j in range(len(r)-1,0,-1):
-    if r[j-1]<r[j]:
-        r[j-1]=r[j]
+    leftMax = [0] * n
+    rightMax = [0] * n
 
-water=0
-for i in range(len(a)):
-    water+=min(l[i],r[i])-a[i]
-print(water)
+    leftMax[0] = arr[0]
+    for i in range(1, n):
+        leftMax[i] = max(leftMax[i - 1], arr[i])
+
+    rightMax[n - 1] = arr[n - 1]
+    for i in range(n - 2, -1, -1):
+        rightMax[i] = max(rightMax[i + 1], arr[i])
+
+    water = 0
+    for i in range(n):
+        water += min(leftMax[i], rightMax[i]) - arr[i]
+
+    return water
+arr = list(map(int, input("Enter elevation map elements separated by space: ").split()))
+result = trap(arr)
+print("Total trapped rain water:", result)
     
     
 # def trap(arr):
