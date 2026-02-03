@@ -1,5 +1,6 @@
 '''Trapping Rain water problem'''
 
+# Method 1: Using precomputed arrays for left max and right max
 def trap(arr):
     n = len(arr)
     if n == 0:
@@ -25,7 +26,7 @@ arr = list(map(int, input("Enter elevation map elements separated by space: ").s
 result = trap(arr)
 print("Total trapped rain water:", result)
     
-    
+# Method 2: Two-pointer approach (commented out)
 # def trap(arr):
 #     left = 0
 #     right = len(arr) - 1
