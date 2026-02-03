@@ -1,19 +1,23 @@
 '''Trapping Rain water problem'''
 a=[3,0,1,0,4,0,2]
-l=a
-r=a
+l=a[:]
+r=a[:]
 # left max
 for i in range(len(a)-1):
     if l[i]>l[i+1]:
         l[i+1]=l[i]
-print(l)
 
 # right max
 for j in range(len(r)-1,0,-1):
     if r[j-1]<r[j]:
         r[j-1]=r[j]
-print(r)
 
+water=0
+for i in range(len(a)):
+    water+=min(l[i],r[i])-a[i]
+print(water)
+    
+    
 # def trap(arr):
 #     left = 0
 #     right = len(arr) - 1
