@@ -16,8 +16,8 @@ def findMinDiff(arr, n, m):
 
     return min_diff
 
-arr = [7, 3, 2, 4, 9, 12, 56]
-m = 3
+arr = list(map(int, input("Enter chocolate packet sizes separated by space: ").split()))
+m = int(input("Enter number of students: "))
 n = len(arr)
 result = findMinDiff(arr, n, m)
 print("Minimum difference is", result)
