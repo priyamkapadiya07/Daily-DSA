@@ -1,13 +1,15 @@
-# Chocolate Distribution Problem
-# 
-# Time Complexity: O(n log n)
-#   - Sorting the array: O(n log n)
-#   - Linear scan through array: O(n)
-#   - Overall dominated by sorting operation
-#
-# Space Complexity: O(1)
-#   - No extra data structures used (apart from input array)
-#   - Only using a few variables for computation
+'''
+Chocolate Distribution Problem
+
+Time Complexity: O(n log n)
+  - Sorting the array: O(n log n)
+  - Linear scan through array: O(n)
+  - Overall dominated by sorting operation
+
+Space Complexity: O(1)
+  - No extra data structures used (apart from input array)
+  - Only using a few variables for computation
+'''
 
 def findMinDiff(arr, n, m):
     if m == 0 or n == 0:
