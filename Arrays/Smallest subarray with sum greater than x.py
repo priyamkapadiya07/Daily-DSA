@@ -15,7 +15,6 @@ REASON: The function uses only a constant amount of extra space:
 - The space used is independent of the input size
 """
 
-
 def smallest_subarray(arr, x):
     n = len(arr)
     min_length = n + 1
