@@ -1,6 +1,6 @@
-# Smallest Subarray with sum greater than a given value
-
 """
+Smallest Subarray with sum greater than a given value
+
 TIME COMPLEXITY: O(n)
 REASON: The sliding window algorithm visits each element at most twice:
 - The 'end' pointer traverses the array once from index 0 to n-1
