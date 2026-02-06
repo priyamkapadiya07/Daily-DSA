@@ -1,6 +1,5 @@
 # Three way partitioning of an array around a given value
 
-
 def three_way_partition(arr, a, b):
     low = 0
     mid = 0
