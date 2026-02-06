@@ -1,13 +1,15 @@
-# Three way partitioning of an array around a given value
-# 
-# Time Complexity: O(n)
-# Reason: We traverse the array once with a single pass using the mid pointer.
-#         Each element is visited at most once, and we perform constant time 
-#         operations (comparisons and swaps) for each element.
-#
-# Space Complexity: O(1)
-# Reason: We use only a constant amount of extra space for three pointers (low, mid, high).
-#         The sorting is done in-place, and no additional data structures are used.
+'''
+Three way partitioning of an array around a given value
+
+Time Complexity: O(n)
+Reason: We traverse the array once with a single pass using the mid pointer.
+        Each element is visited at most once, and we perform constant time 
+        operations (comparisons and swaps) for each element.
+
+Space Complexity: O(1)
+Reason: We use only a constant amount of extra space for three pointers (low, mid, high).
+        The sorting is done in-place, and no additional data structures are used.
+'''
 
 def three_way_partition(arr, a, b):
     low = 0
