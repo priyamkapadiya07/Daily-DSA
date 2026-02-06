@@ -1,8 +1,5 @@
 # Three way partitioning of an array around a given value
 
-arr = [1, 4, 3, 6, 2, 1]
-a = 2
-b = 4
 
 def three_way_partition(arr, a, b):
     low = 0
@@ -19,5 +16,8 @@ def three_way_partition(arr, a, b):
             high -= 1
         else:
             mid += 1
+arr = list(map(int, input("Enter the array elements: ").split()))
+a = int(input("Enter the value of a: "))
+b = int(input("Enter the value of b: "))
 three_way_partition(arr, a, b)
 print(arr)
