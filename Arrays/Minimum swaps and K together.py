@@ -1,7 +1,6 @@
 '''
 Minimum swaps required bring elements less equal K together
 
-
 Time Complexity: O(n)
 Reason:
   - Single pass through the array with two pointers (i and j)
