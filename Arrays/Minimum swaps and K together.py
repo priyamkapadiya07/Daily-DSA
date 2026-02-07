@@ -1,7 +1,5 @@
 # Minimum swaps required bring elements less equal K together
 
-a=[2,7,9,5,8,7,4]
-k=6
 
 # Time Complexity: O(n)
 # Reason:
@@ -13,7 +11,7 @@ k=6
 # Space Complexity: O(1)
 # Reason: Only using constant extra space (i, j pointers)
 #         In-place swapping means no additional data structures needed
-#
+
 def minimum_swaps_together(a, k):
     i=0
     for j in range(len(a)):
@@ -24,4 +22,6 @@ def minimum_swaps_together(a, k):
             i+=1
     print(a)
 
+a=[2,7,9,5,8,7,4]
+k=6
 minimum_swaps_together(a, k)
