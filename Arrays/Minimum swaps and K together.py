@@ -22,6 +22,6 @@ def minimum_swaps_together(a, k):
             i+=1
     print(a)
 
-a=[2,7,9,5,8,7,4]
-k=6
+a=list(map(int,input("Enter the array elements: ").split()))
+k=int(input("Enter the value of K: "))
 minimum_swaps_together(a, k)
