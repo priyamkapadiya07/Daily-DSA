@@ -19,7 +19,6 @@ def median(arr):
         mid = n // 2
         return arr[mid]
 
-
 if __name__ == "__main__":
     arr = list(map(int, input("Enter the elements of the array separated by spaces: ").split()))
     print(median(arr))
