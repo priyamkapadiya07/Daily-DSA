@@ -1,6 +1,5 @@
 # Median of an Array
 
-arr = [1,2]
 
 def median(arr):
     arr.sort()
@@ -13,4 +12,6 @@ def median(arr):
     else:
         mid = n // 2
         return arr[mid]
+
+arr = list(map(int, input("Enter the elements of the array separated by spaces: ").split()))
 print(median(arr))
