@@ -1,6 +1,5 @@
 # Median of an Array
 
-
 def median(arr):
     arr.sort()
     n = len(arr)
