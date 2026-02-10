@@ -1,7 +1,5 @@
 # Median of 2 Sorted Arrays of Different Sizes
 
-a = [3, 5, 6, 12, 15]
-b = [3, 4, 6, 10, 10, 12]
 
 def median(arr):
     arr.sort()
@@ -14,5 +12,7 @@ def median(arr):
     else:
         mid = n // 2
         return arr[mid]
-merged = a + b
-print(median(merged))
+
+a = [3, 5, 6, 12, 15]
+b = [3, 4, 6, 10, 10, 12]
+print(median(a+b))
