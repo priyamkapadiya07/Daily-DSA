@@ -27,6 +27,6 @@ def median(arr):
         mid = n // 2
         return arr[mid]
 
-a = [3, 5, 6, 12, 15]
-b = [3, 4, 6, 10, 10, 12]
+a = list(map(int, input("Enter the first sorted array (space-separated): ").split()))
+b = list(map(int, input("Enter the second sorted array (space-separated): ").split()))
 print(median(a+b))
