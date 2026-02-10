@@ -1,6 +1,5 @@
 # Median of 2 Sorted Arrays of Different Sizes
 
-
 def median(arr):
     arr.sort()
     n = len(arr)
