@@ -1,4 +1,9 @@
 # Spirally traversing a matrix
+'''
+Time Complexity:	O(n × m)	Each element visited once
+Space Complexity:	O(n × m)	Output list stores all elements
+Auxiliary Space:	O(1)	    Only boundary variables used
+'''
 
 mat = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
 
