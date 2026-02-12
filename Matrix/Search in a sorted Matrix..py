@@ -1,7 +1,5 @@
 # Search an element in a Matrix
 
-mat = [[1, 5, 9, 11], [14, 20, 21, 26], [30, 34, 43, 50]]
-x = 42
 
 def search_matrix(matrix, target):
     row=0
@@ -14,4 +12,7 @@ def search_matrix(matrix, target):
         else:
             row+=1
     return False
+
+mat = [[1, 5, 9, 11], [14, 20, 21, 26], [30, 34, 43, 50]]
+x = 42
 print(search_matrix(mat, x))
