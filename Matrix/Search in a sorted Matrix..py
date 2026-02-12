@@ -1,4 +1,14 @@
+
 # Search an element in a Matrix
+
+# Time Complexity:
+# The algorithm starts from the top-right corner and moves either left or down in each step.
+# In the worst case, it will traverse at most one full row and one full column (i.e., m + n steps for an m x n matrix).
+# Therefore, the time complexity is O(m + n).
+#
+# Space Complexity:
+# The algorithm uses only a constant amount of extra space (for variables row and col).
+# No additional data structures are used, so the space complexity is O(1).
 
 
 def search_matrix(matrix, target):
