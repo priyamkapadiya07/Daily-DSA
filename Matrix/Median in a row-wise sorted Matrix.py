@@ -11,4 +11,6 @@ def median(matrix):
         return (mat[0][n//2-1]+mat[0][n//2])//2
     else:
         return mat[0][n//2]
+    
+print("Median is: "+median(mat))
         
