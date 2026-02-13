@@ -1,6 +1,5 @@
 # Find median in a row wise sorted matrix
 
-mat = [[2,4,9],[3,6,7],[4,7,10]]
 
 def median(matrix):
     for i in range(1,len(matrix)):
@@ -12,4 +11,5 @@ def median(matrix):
     else:
         return mat[0][n//2]
     
+mat = [[2,4,9],[3,6,7],[4,7,10]]
 print("Median is:",median(mat))
