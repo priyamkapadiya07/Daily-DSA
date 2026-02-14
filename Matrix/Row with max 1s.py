@@ -1,10 +1,11 @@
-# Find row with maximum no. of 1's
+'''
+Find row with maximum no. of 1's
 
-
-# Time Complexity: O(n * m)
-# For each of the n rows, sum(arr[i]) iterates over m columns.
-# Space Complexity: O(1)
-# Only a few variables are used; no extra space proportional to input size.
+Time Complexity: O(n * m)
+For each of the n rows, sum(arr[i]) iterates over m columns.
+Space Complexity: O(1)
+Only a few variables are used; no extra space proportional to input size.
+'''
 
 def row_with_max_1s(arr):
     max_sum=0
