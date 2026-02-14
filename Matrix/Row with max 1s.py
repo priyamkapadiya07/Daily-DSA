@@ -15,5 +15,6 @@ def row_with_max_1s(arr):
             max_sum = sum(arr[i])
             row = i
     return row
-arr = [[0,0], [1,1]]
+
+arr = [[0,1,1,1], [0,0,1,1], [1,1,1,1], [0,0,0,0]]
 print("Row with maximum 1's is:", row_with_max_1s(arr))
