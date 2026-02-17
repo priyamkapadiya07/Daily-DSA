@@ -1,7 +1,24 @@
-# Max rectangle
+'''
+Max rectangle
 
+    Time Complexity:
+    - The function largestRectangleArea runs in O(m) time for each row, where m is the number of columns.
+      - Each index is pushed and popped from the stack at most once.
+    - The function maxRectangle iterates over n rows, and for each row, calls largestRectangleArea.
+      - So overall time complexity is O(n * m), where n is the number of rows and m is the number of columns.
+    
+    Space Complexity:
+    - The space used is O(m) for the heights array and O(m) for the stack in largestRectangleArea.
+    - So overall space complexity is O(m).
+    
+    Reasoning:
+    - The algorithm builds a histogram for each row and computes the largest rectangle in a histogram efficiently using a stack.
+    - No extra space is used except for arrays proportional to the number of columns.
+'''
 def largestRectangleArea(heights):
     stack = []
+
+
     max_area = 0
     heights.append(0)
 
@@ -14,7 +31,6 @@ def largestRectangleArea(heights):
 
     heights.pop()
     return max_area
-
 
 def maxRectangle(mat):
     if not mat:
