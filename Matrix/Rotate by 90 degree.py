@@ -1,7 +1,8 @@
 # Rotate by 90 degree
 
-mat = [[1, 2],
-       [3, 4]]
+mat = [[1, 2, 3],
+       [4, 5, 6],
+       [7, 8, 9]]
 
 def rotate90(mat):
     '''
